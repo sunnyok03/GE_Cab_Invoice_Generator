@@ -11,5 +11,6 @@ public class Main {
         rides.addANewRide("userId1",15,10);
         EnhancedInvoice enhancedInvoice = rides.getEnhancedInvoice("userId1");
         System.out.println(enhancedInvoice);
+        System.out.println(cabInvoiceGenerator.calculateFare(10,2,RideType.PREMIUM));
     }
 }
