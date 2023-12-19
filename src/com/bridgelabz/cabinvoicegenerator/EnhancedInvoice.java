@@ -34,4 +34,13 @@ public class EnhancedInvoice {
     public void setAvgFarePerRide(double avgFarePerRide) {
         this.avgFarePerRide = avgFarePerRide;
     }
+
+    @Override
+    public String toString() {
+        return "EnhancedInvoice{" +
+                "totalNumberOfRides=" + totalNumberOfRides +
+                ", totalFares=" + totalFares +
+                ", avgFarePerRide=" + avgFarePerRide +
+                '}';
+    }
 }
