@@ -2,6 +2,7 @@ package com.bridgelabz.cabinvoicegenerator;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        CabInvoiceGenerator cabInvoiceGenerator = new CabInvoiceGenerator();
+        System.out.println(cabInvoiceGenerator.calculateFare(0.1,1));
     }
 }
