@@ -3,6 +3,9 @@ package com.bridgelabz.cabinvoicegenerator;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+calculate invoice and total fare of different rides
+ */
 public class CabInvoiceGenerator {
     private double distance;
     private double timeInMin;
@@ -13,16 +16,18 @@ public class CabInvoiceGenerator {
     private final double PREMIUM_FARE_PER_MINUTE = 2;
     private final double PREMIUM_MIN_FARE = 5;
 
+    // parameterised constructor
     public CabInvoiceGenerator(double distance, double timeInMin) {
         this.distance = distance;
         this.timeInMin = timeInMin;
     }
 
+    //default constructor
     public CabInvoiceGenerator() {
     }
 
     /*
-    @desc: given distance and time returns fare of current object
+    @desc: calculate fare of current object
     @params:
     @return: total fare
      */
